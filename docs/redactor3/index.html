@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redactor.js 3 XSS Demo</title>
+  <!-- Redactor.js CSS -->
+  <link rel="stylesheet" href="./redactor.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .redactor-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .editor {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="redactor-container">
+    <h1>Redactor.js 3 XSS Demo</h1>
+    <p>Edit the text in the editor below:</p>
+    <!-- Textarea for Redactor.js -->
+    <textarea id="editor" class="editor" placeholder="Insert Javascript XSS payloads here."></textarea>
+  </div>
+
+  <!-- Redactor.js Script -->
+  <script src="./redactor.js"></script>
+  <script>
+    // Initialize Redactor.js on the textarea
+    document.addEventListener("DOMContentLoaded", function () {
+      const editor = new Redactor('#editor', {
+        minHeight: '200px',
+        placeholder: 'Insert Javascript XSS payloads here.',
+        toolbar: true,
+        buttons: ['bold', 'italic', 'underline', 'link', 'unorderedlist', 'orderedlist', 'html'],
+        callbacks: {
+          // Example callback: Log editor content on change
+          change: function () {
+            console.log('Content changed:', this.code.get());
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

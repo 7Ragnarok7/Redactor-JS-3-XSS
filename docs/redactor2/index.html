@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redactor.js 2 Demo</title>
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <!-- Redactor.js 2 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/redactor/2.6.2/redactor.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .redactor-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    textarea {
+      display: none; /* Hide uninitialized textarea */
+    }
+  </style>
+</head>
+<body>
+  <div class="redactor-container">
+    <h1>Redactor.js 2 Demo</h1>
+    <p>Start editing in the WYSIWYG editor below:</p>
+    <!-- Textarea for Redactor.js -->
+    <textarea id="editor">Welcome to Redactor.js 2!</textarea>
+  </div>
+
+  <!-- Redactor.js 2 Script -->
+  <script src="https://cdn.jsdelivr.net/redactor/2.6.2/redactor.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Initialize Redactor.js 2
+      $('#editor').redactor({
+        minHeight: 200,
+        placeholder: 'Type your content here...',
+        buttons: ['bold', 'italic', 'underline', 'link', 'unorderedlist', 'orderedlist', 'html'],
+        callbacks: {
+          change: function () {
+            console.log('Editor content updated:', this.code.get());
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
