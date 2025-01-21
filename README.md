@@ -12,7 +12,7 @@ This Proof of Concept (POC) demonstrates the exploitation of an XSS vulnerabilit
 1. **Redactor JS (version 3.\*.\*)**: https://github.com/7Ragnarok7/Redactor-JS-3-XSS/tree/main/docs/redactor3
 
 ## Reproduction Steps
-This vulnerability can be tested from the pre-configured Redactor JS instance present [here](https://7ragnarok7.github.io/).
+This vulnerability can be tested from the pre-configured Redactor JS 3 instance present [here](https://7ragnarok7.github.io/).
 
 1. **Switch to Source/HTML mode and insert Payload**:
    - Open the Redactor JS instance and click on the "HTML" icon.
@@ -31,8 +31,6 @@ This vulnerability can be tested from the pre-configured Redactor JS instance pr
    ![XSS Tirigger Screenshot](screenshots/XSS.png)
    
 ## Advisory
-   
-## Additional Notice
    
 ## Important Links
 - https://imperavi.com/redactor/
