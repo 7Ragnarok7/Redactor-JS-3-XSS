@@ -9,10 +9,10 @@ This repository documents the vulnerability details and exploit for [Redactror J
 This Proof of Concept (POC) demonstrates the exploitation of an XSS vulnerability discovered by me recently in the [Redactror JS](https://imperavi.com/redactor/)  WYSIWYG editor, which affects all versions of Redactor JS 3 and its prior versions. The flaw allows JavaScript execution by embedding a `<script>` tag inside a `<figure>` tag within the editor, which the library fails to sanitize.
 
 ## Prerequisites
-1. **Redactor JS (version 3.\*.\*)**: (docs/redactor3/)
+1. **Redactor JS (version 3.\*.\*)**: https://github.com/7Ragnarok7/Redactor-JS-3-XSS/tree/main/docs/redactor3
 
 ## Reproduction Steps
-This vulnerability can be tested from the pre-configured CKEditor instance present [here](https://7ragnarok7.github.io/).
+This vulnerability can be tested from the pre-configured Redactor JS instance present [here](https://7ragnarok7.github.io/).
 
 1. **Switch to Source/HTML mode and insert Payload**:
    - Open the Redactor JS instance and click on the "HTML" icon.
