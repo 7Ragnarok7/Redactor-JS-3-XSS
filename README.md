@@ -26,10 +26,10 @@ This vulnerability can be tested using the pre-configured Redactor JS 3 instance
      ![Payload Insertion Screenshot](screenshots/payload.png)
      
  2. **Switch to WYSIWYG Mode**:
-   - Click on the "HTML" icon again to switch back to the WYSIWYG mode.
-   - Observe the XSS payload getting triggered.
+    - Click on the "HTML" icon again to switch back to the WYSIWYG mode.
+    - Observe the XSS payload getting triggered.
      
-     ![XSS Trigger Screenshot](screenshots/XSS.png)
+      ![XSS Trigger Screenshot](screenshots/XSS.png)
    
 ## Advisory
    
