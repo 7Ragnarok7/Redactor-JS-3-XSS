@@ -37,5 +37,5 @@ This vulnerability can be tested using the pre-configured Redactor JS 3 instance
 - <https://imperavi.com/redactor/>
 - <https://imperavi.com/redactor/examples/initialization/base-example/>
 - <https://7ragnarok7.github.io/Redactor-JS-3-XSS/>
-- <https://github.com/7Ragnarok7/Redactor-JS-4-XSS/>
+- <https://7ragnarok7.github.io/Redactor-JS-4-XSS/>
 
