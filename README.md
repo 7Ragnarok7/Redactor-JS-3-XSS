@@ -32,6 +32,7 @@ This vulnerability can be tested using the pre-configured Redactor JS 3 instance
       ![XSS Trigger Screenshot](screenshots/XSS.png)
    
 ## Advisory
+Update to the latest version.
    
 ## Important Links
 - <https://imperavi.com/redactor/>
